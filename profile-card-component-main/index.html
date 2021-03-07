@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Kumbh Sans';
+      background-color: hsl(185, 75%, 39%);
+    }
+
+    .img-top{
+      margin-left: -20rem;
+      margin-top: -28rem;
+    }
+
+    .img-bottom{
+      right: 0;
+      margin-top: 25rem;
+      margin-right: -15rem;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="overflow-hidden">
+  <img src="/images/bg-pattern-top.svg" class="fixed object-center img-top">
+  <img src="/images/bg-pattern-bottom.svg" class="fixed img-bottom">
+  
+  <div class="flex items-center justify-center min-h-screen ">
+    
+    <!-- card -->
+    <div class="z-10 overflow-hidden bg-white rounded-2xl w-80 h-96">
+
+      <!-- header card -->
+      <div>
+        <img src="images/bg-pattern-card.svg" alt="missing img">
+      </div>
+      <!-- end of header card -->
+
+      <!-- body card -->
+      <div class="flex flex-col items-center justify-center">
+
+        <!-- upper body -->
+          <div class="-mt-14">
+            <img src="images/image-victor.jpg" alt="missing img" class="w-24 h-24 border-4 rounded-full border-gray-50">
+          </div>
+          <div class="my-6 text-center">
+            <div class="text-lg">
+              <span class="font-bold text-gray-600">Victor Crest</span>&nbsp
+              <span class="font-normal text-gray-400">26</span>
+              <br>
+              <span class="text-sm text-gray-400">London</span>
+            </div>
+          </div>
+        <!-- end of upper body -->
+
+        <!-- lower body -->
+        <div class="w-full border-t">
+          <div class="flex justify-center px-4 text-center mt-9">
+            <div class="flex flex-col flex-1">
+              <span class="font-bold text-gray-600">80K</span>
+              <span class="text-xs text-gray-400">Followers</span>
+            </div>
+            <div class="flex flex-col flex-1">
+              <span class="font-bold text-gray-600">803K</span>
+              <span class="text-xs text-gray-400">Likes</span>
+            </div>
+            <div class="flex flex-col flex-1">
+              <span class="font-bold text-gray-600">1.4K</span>
+              <span class="text-xs text-gray-400">Photos</span>
+            </div>
+          </div>
+        </div>
+        <!-- end of lower body -->
+
+      </div>
+      <!-- end of body card -->
+
+    </div>
+    <!-- end of card -->
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">effendikiki</a>.
+  </div>
+</body>
+
+</html>
