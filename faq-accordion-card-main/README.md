@@ -6,15 +6,11 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -30,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/faq-accordion-card-using-tailwind-css-and-alpinejs-xMdhb29HT)
+- Live Site URL: [Preview](https://faq-accordion-card-main-ihhi2lcwr-effendikiki.vercel.app/)
 
 ## My process
 
@@ -51,7 +47,7 @@ i'm used to convert design to markup, but in this challenge i really have a hard
 ## Author
 
 - Website - [effendikiki](github.com/effendikiki)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/effendikiki)
-- Twitter - [@yourusername](https://www.twitter.com/randomdudes00)
+- Frontend Mentor - [@effendikiki](https://www.frontendmentor.io/profile/effendikiki)
+- Twitter - [@effendikiki](https://www.twitter.com/randomdudes00)
 
 
