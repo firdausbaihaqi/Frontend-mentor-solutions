@@ -1,0 +1,18 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx tailwindcss build app.scss -o app.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

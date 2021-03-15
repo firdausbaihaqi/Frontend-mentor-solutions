@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+</head>
+
+<body class="min-h-screen bg-gradient-to-t from-soft-blue to-soft-violet">
+  <div class="container flex justify-center mx-auto pt-52 md:pt-20 ">
+
+    <div class="w-full mx-8 overflow-visible bg-white md:overflow-hidden lg:w-3/4 rounded-2xl">
+      <div class="grid md:flex figure-wrapper">
+
+        <!-- left and up side -->
+        <div class="flex items-center justify-center flex-1 mx-auto">
+          <div>
+
+            <!-- figure desktop -->
+            <figure class="hidden md:inline">
+              <div class="-ml-20 ">
+                <img src="images/illustration-woman-online-desktop.svg" alt="missing img">
+              </div>
+              <div class="absolute -mt-56 -ml-24">
+                <img src="images/illustration-box-desktop.svg" alt="missing img">
+              </div>
+            </figure>
+            <!-- end of figure desktop -->
+
+            <!-- figure mobile -->
+            <figure class="inline md:hidden">
+              <div class="mr-7 -mt-28">
+                <img src="images/illustration-woman-online-mobile.svg" alt="missing img">
+              </div>
+            </figure>
+            <!-- end of figure mobile -->
+
+          </div>
+        </div>
+        <!-- end of left and up side -->
+
+        <!-- right and bottom side -->
+        <div class="flex-1 px-6 py-10 md:px-10 md:py-14">
+          
+          <div class="h-auto md:h-96">
+            <h2 class="pb-4 text-3xl font-bold text-center md:text-left text-primary-darker">FAQ</h2>
+
+            <!-- item -->
+            <div x-data=" {isOpen : false} " class="pt-5 pb-4 border-b border-divider">
+              <div @click="isOpen = !isOpen"
+                class="flex items-center justify-between cursor-pointer text-neutral-darker hover:text-primary-hover"
+                :class="{'font-bold' : isOpen}">
+                <span class="text-xs md:text-base">How many team members can I invite?</span>
+                <div>
+                  <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}"
+                    src="images/icon-arrow-down.svg" alt="missing">
+                </div>
+              </div>
+
+              <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+                class="pt-3 text-sm text-neutral">
+                <span class="text-xs md:text-base">
+                  You can invite up to 2 additional users on the Free plan. There is no limit on
+                  team members for the Premium plan.
+                </span>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item -->
+            <div x-data=" {isOpen : false} " class="pt-5 pb-4 border-b border-divider">
+              <div @click="isOpen = !isOpen"
+                class="flex items-center justify-between cursor-pointer text-neutral-darker hover:text-primary-hover"
+                :class="{'font-bold' : isOpen}">
+                <span class="text-xs md:text-base">What is the maximum file upload size?</span>
+                <div>
+                  <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}"
+                    src="images/icon-arrow-down.svg" alt="missing">
+                </div>
+              </div>
+
+              <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+                class="pt-3 text-sm text-neutral">
+                <span class="text-xs md:text-base">
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </span>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item -->
+            <div x-data=" {isOpen : false} " class="pt-5 pb-4 border-b border-divider">
+              <div @click="isOpen = !isOpen"
+                class="flex items-center justify-between cursor-pointer text-neutral-darker hover:text-primary-hover"
+                :class="{'font-bold' : isOpen}">
+                <span class="text-xs md:text-base">How do I reset my password?</span>
+                <div>
+                  <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}"
+                    src="images/icon-arrow-down.svg" alt="missing">
+                </div>
+              </div>
+
+              <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+                class="pt-3 text-sm text-neutral">
+                <span class="text-xs md:text-base">
+                  Click “Forgot password” from the login page or “Change password” from your profile page.
+                  A reset link will be emailed to you.
+                </span>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item -->
+            <div x-data=" {isOpen : false} " class="pt-5 pb-4 border-b border-divider">
+              <div @click="isOpen = !isOpen"
+                class="flex items-center justify-between cursor-pointer text-neutral-darker hover:text-primary-hover"
+                :class="{'font-bold' : isOpen}">
+                <span class="text-xs md:text-base">Can I cancel my subscription?</span>
+                <div>
+                  <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}"
+                    src="images/icon-arrow-down.svg" alt="missing">
+                </div>
+              </div>
+
+              <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+                class="pt-3 text-sm text-neutral">
+                <span class="text-xs md:text-base">
+                  Yes! Send us a message and we’ll process your request no questions asked.
+                </span>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item -->
+            <div x-data=" {isOpen : false} " class="pt-5 pb-4 border-b border-divider">
+              <div @click="isOpen = !isOpen"
+                class="flex items-center justify-between cursor-pointer text-neutral-darker hover:text-primary-hover"
+                :class="{'font-bold' : isOpen}">
+                <span class="text-xs md:text-base">Do you provide additional support?</span>
+                <div>
+                  <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}"
+                    src="images/icon-arrow-down.svg" alt="missing">
+                </div>
+              </div>
+
+              <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+                class="pt-3 text-sm text-neutral">
+                <span class="text-xs md:text-base">
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </span>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+
+        </div>
+        <!-- end of right and bottom side -->
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="github.com/effendikiki">effendikiki</a>.
+  </div>
+</body>
+
+</html>

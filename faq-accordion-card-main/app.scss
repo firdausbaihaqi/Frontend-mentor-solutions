@@ -1,0 +1,48 @@
+:root {
+  --primary-darker: hsl(238, 29%, 16%);
+  --primary-hover: hsl(14, 88%, 65%);
+  --neutral-darker: hsl(237, 12%, 33%);
+  --neutral: hsl(240, 6%, 50%);
+
+  --divider: hsl(240, 5%, 91%);
+
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+}
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.attribution {
+  padding-top: 10%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.figure-wrapper {
+  background: url("images/bg-pattern-mobile.svg") no-repeat;
+  background-position-x: 50%, left;
+}
+
+@media (min-width: 768px) {
+  .figure-wrapper {
+    background: url("images/bg-pattern-desktop.svg") no-repeat;
+    background-position-x: -570px, left;
+    background-position-y: -300px, top;
+  }
+}
+
+@import "tailwindcss/utilities";
