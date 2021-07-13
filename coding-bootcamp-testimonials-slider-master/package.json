@@ -6,7 +6,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "watch": "npx tailwindcss -i src/global.css -o src/styles.css --watch"
+    "watch": "npx tailwindcss -i public/global.css -o public/styles.css --watch"
   },
   "keywords": [],
   "author": "",
