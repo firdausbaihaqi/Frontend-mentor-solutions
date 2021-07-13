@@ -12,21 +12,21 @@
 
 <body class="flex flex-col justify-between min-h-screen">
 
-    <div class="flex flex-col-reverse items-center gap-12 mt-16 lg:mt-28 lg:px-20 lg:flex-row lg:gap-0">
+    <main class="flex flex-col-reverse items-center gap-12 mt-16 lg:mt-28 lg:px-16 lg:flex-row lg:gap-0">
 
-        <div class="z-20 px-8 lg:px-0 lg:w-1/2 lg:ml-16 lg:-mr-16 text-primary">
-            <img src="images/pattern-quotes.svg" alt="pattern-quotes"
+        <div class="z-20 px-8 lg: lg:px-0 lg:w-1/2 lg:ml-16 lg:-mr-16 text-primary" role="article">
+            <img src="images/pattern-quotes.svg" alt="pattern-quotes" role="img"
                 class="w-16 mx-auto -mb-6 lg:-mb-10 lg:ml-24 lg:w-auto lg:h-auto">
-            <p id="testimony" class="text-center font-light lg:text-left text-[18px] md:text-[32px]"></p>
+            <h1 id="testimony" role="heading" class="leading-snug text-center font-light lg:text-left text-[18px] md:text-[32px]"></h1>
             <br>
             <p class="text-center lg:text-left lg:text-xl">
-                <span id="name" class="font-bold"></span>
+                <span id="name" role="doc-footnote" class="font-bold"></span>
                 <br class="inline lg:hidden">
-                <span id="job" class="ml-1 font-medium text-primary-lighter"></span>
+                <span id="job" role="doc-footnote" class="ml-1 font-medium text-primary-lighter"></span>
             </p>
         </div>
 
-        <div class="mx-auto lg:w-1/2 lg:mx-0">
+        <div role="figure" class="lg:w-1/2 lg:mx-0">
             <div class="z-10 rounded shadow-2xl img-profile">
                 <div id="img" class="absolute z-10 bg-cover opacity-100 img-profile">
 
@@ -50,18 +50,18 @@
 
         </div>
 
-    </div>
+    </main>
 
-    <div class="flex ">
-                <img src="images/pattern-curve.svg" alt="pattern-curve" class="w-auto mt-auto">
-            </div>
+    <footer class="flex">
+        <img src="images/pattern-curve.svg" alt="pattern-curve" role="img" class="w-auto mt-auto">
+        <div role="note" class="fixed bottom-0 attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+                Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/effendikiki" target="_blank"
+                rel="noopener">effendikiki</a>.
+        </div>
+    </footer>
 
-            <div class="fixed bottom-0 attribution">
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-                    rel="noopener">Frontend Mentor</a>.
-                Coded by <a href="https://www.frontendmentor.io/profile/effendikiki" target="_blank"
-                    rel="noopener">effendikiki</a>.
-            </div>
 
 </body>
 
