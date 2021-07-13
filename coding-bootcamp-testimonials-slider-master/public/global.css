@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.img-profile {
+  height: 270px;
+  width: 270px;
+}
+
+@media (min-width: 768px) {
+  .img-profile {
+    height: 540px;
+    width: 540px;
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "watch": "npx tailwindcss -i src/global.css -o src/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "postcss": "^8.3.5",
+    "snowpack": "^3.7.1",
+    "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.0"
+  }
+}
