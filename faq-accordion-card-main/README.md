@@ -5,6 +5,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 ## Table of contents
 
 - [Overview](#overview)
+  - [Screenshots](#screenshot)
   - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
@@ -14,6 +15,10 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 
 ## Overview
+
+### Screenshot
+
+![](design/desktop-preview.jpg)
 
 ### The challenge
 
